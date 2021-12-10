@@ -1,0 +1,6 @@
+function Obj = Objfun( X,P,T,hinddennum,P_Test,T_Test)
+[M,N]=size(X);
+Obj=zeros(M,1);
+for i = 1:M
+    Obj(i)= Bpfun(X(i,:),P,T,hinddennum,P_Test,T_Test);
+End
